@@ -1,5 +1,5 @@
 ---
-# tasks file for vim
+# tasks for vim
 - name: Install vim
   package:
     name=vim

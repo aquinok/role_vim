@@ -1,0 +1,14 @@
+---
+# tasks file for vim
+- name: Install vim
+  package:
+    name=vim
+    state=latest
+
+- name: Add .vimrc
+  template:
+    src=vimrc.j2
+    dest=/root/.vimrc
+    owner=root
+    group=root
+    mode=0600
